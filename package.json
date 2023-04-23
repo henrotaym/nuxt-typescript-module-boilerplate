@@ -1,8 +1,8 @@
 {
-  "name": "@deegital/nuxt-trustup-io-toasteo",
-  "version": "1.0.0",
-  "description": "My new Nuxt module",
-  "repository": "your-org/@deegital/nuxt-trustup-io-toasteo",
+  "name": "{ORGANIZATION_NAME}/{MODULE_NAME}",
+  "version": "0.0.1",
+  "description": "{MODULE_DESCRIPTION}",
+  "repository": "git@github.com:{ORGANIZATION_NAME}/{MODULE_NAME}.git",
   "license": "MIT",
   "type": "module",
   "exports": {
@@ -24,7 +24,7 @@
     "build": "nuxt-module-build",
     "lint": "eslint . --fix",
     "ts": "vue-tsc --noEmit",
-    "check": "yarn ts && yarn lint",
+    "check": "yarn ts && yarn lint && yarn test",
     "format": "prettier --write \"src/**/*\"",
     "test": "vitest run",
     "test:watch": "vitest watch",
@@ -36,7 +36,6 @@
     "postinstall": "yarn generate"
   },
   "dependencies": {
-    "@deegital/vue-trustup-io-toasteo": "^1.1.9",
     "@nuxt/kit": "^3.4.2"
   },
   "devDependencies": {

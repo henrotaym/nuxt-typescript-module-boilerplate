@@ -1,6 +1,6 @@
 export default defineNuxtConfig({
   modules: ["../src/module"],
-  toasteo: {},
+  {MODULE_CONFIG_KEY}: {},
   postcss: {
     plugins: {
       tailwindcss: {},

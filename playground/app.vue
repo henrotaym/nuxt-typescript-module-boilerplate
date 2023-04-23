@@ -10,7 +10,7 @@
       leave-active-class="transition-all transform duration-1000"
       leave-to-class="opacity-0 scale-75"
     >
-      <div v-if="isDisplaying">
+      <div v-if="isReady">
         <div
           class="text-center p-8 rounded-full bg-white w-[650px] h-[650px] shadow-lg"
         >
@@ -21,26 +21,15 @@
             </div>
           </div>
         </div>
-        <TrustupIoToasteo :toasteo="toasteo" />
-        <button @click="showToast">add toast</button>
       </div>
     </Transition>
   </div>
 </template>
 
-<script setup>
-import { onMounted, useDisplay, useToasteo } from "#imports";
+<script setup lang="ts">
+import { onMounted, ref } from "#imports";
 
-const { isDisplaying, show } = useDisplay(false);
-const toasteo = useToasteo();
+const isReady = ref<boolean>(false);
 
-const showToast = () => {
-  toasteo.success({
-    title: "super titre",
-    text: "super text",
-    timer: 5000,
-  });
-};
-
-onMounted(() => show());
+onMounted(() => isReady.value = true);
 </script>

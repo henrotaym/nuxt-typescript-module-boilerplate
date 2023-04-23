@@ -1,4 +1,4 @@
 {
   "private": true,
-  "name": "@deegital/nuxt-trustup-io-toasteo-playground"
+  "name": "{ORGANIZATION_NAME}/{MODULE_NAME}-playground"
 }

@@ -1,8 +1,8 @@
 version: '3.4'
-name: nuxt-trustup-io-toasteo
+name: {MODULE_NAME}
 services:
   app:
-    container_name: nuxt-trustup-io-toasteo-app
+    container_name: {MODULE_NAME}-app
     build:
       context: .
       dockerfile: Dockerfile
