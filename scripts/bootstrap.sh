@@ -1,5 +1,3 @@
 #!/bin/bash
 
-# [ ! -d dist ] && mkdir dist
-
-docker-compose build --no-cache
+docker-compose build --no-cache && ./app.sh yarn install
