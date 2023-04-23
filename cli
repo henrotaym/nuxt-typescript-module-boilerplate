@@ -3,22 +3,22 @@ cd ./scripts
 
 if [ "$1" == "bootstrap" ]
     then 
-        ./bootstrap && ./start
+        ./bootstrap.sh && ./start.sh
 fi
 
 if [ "$1" == "start" ]
     then
-        ./start
+        ./start.sh
 fi
 
 if [ "$1" == "stop" ]
     then 
-        ./stop
+        ./stop.sh
 fi
 
 if [ "$1" == "yarn" ]
     then 
-        ./app $*
+        ./app.sh $*
 fi
 
 cd ../

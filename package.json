@@ -18,21 +18,22 @@
     "dist"
   ],
   "scripts": {
+    "generate": "nuxi prepare playground",
+    "dev": "yarn generate && nuxi dev playground",
+    "dev:build": "nuxi build playground",
+    "build": "nuxt-module-build",
     "lint": "eslint . --fix",
     "ts": "vue-tsc --noEmit",
     "check": "yarn ts && yarn lint",
     "format": "prettier --write \"src/**/*\"",
     "test": "vitest run",
     "test:watch": "vitest watch",
-    "dev": "nuxi prepare playground && nuxi dev playground",
-    "dev:prepare": "nuxt-module-build --stub && nuxi prepare playground",
-    "dev:build": "nuxi build playground",
-    "build": "nuxt-module-build",
+    "dev:prepare": "nuxt-module-build --stub && yarn generate",
     "preversion": "yarn check && yarn test",
     "version": "yarn format && git add -A src",
     "postversion": "git push && git push --tags && npm publish",
     "prepublishOnly": "yarn check && yarn build",
-    "postinstall": "yarn bootstrap"
+    "postinstall": "yarn generate"
   },
   "dependencies": {
     "@deegital/vue-trustup-io-toasteo": "^1.1.9",
