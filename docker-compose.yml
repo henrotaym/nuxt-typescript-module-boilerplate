@@ -1,0 +1,14 @@
+version: '3.4'
+name: nuxt-trustup-io-toasteo
+services:
+  app:
+    container_name: nuxt-trustup-io-toasteo-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: runner
+    ports:
+      - ${APP_PORT:-3000}:3000
+      - ${WEBSOCKET_PORT:-24678}:24678
+    volumes:
+      - ./:/app
