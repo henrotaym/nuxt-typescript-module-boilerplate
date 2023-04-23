@@ -24,15 +24,15 @@
     "build": "nuxt-module-build",
     "lint": "eslint . --fix",
     "ts": "vue-tsc --noEmit",
-    "check": "yarn ts && yarn lint && yarn test",
+    "validate": "yarn ts && yarn lint && yarn test",
     "format": "prettier --write \"src/**/*\"",
     "test": "vitest run",
     "test:watch": "vitest watch",
     "dev:prepare": "nuxt-module-build --stub && yarn generate",
-    "preversion": "yarn check && yarn test",
+    "preversion": "yarn validate && yarn test",
     "version": "yarn format && git add -A src",
     "postversion": "git push && git push --tags && npm publish",
-    "prepublishOnly": "yarn check && yarn build",
+    "prepublishOnly": "yarn validate && yarn build",
     "postinstall": "yarn generate"
   },
   "dependencies": {
