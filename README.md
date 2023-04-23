@@ -55,6 +55,7 @@ Find and replace all on all files (CMD+SHIFT+F):
   - {MODULE_DESCRIPTION} // Our notification package for nuxt.
   - {MODULE_CONFIG_KEY} // trustupIoToasteo
   - {ORGANIZATION_NAME} // @deegital
+  - {REPOSITORY_URL} // git@github.com:deegitalbe/nuxt-trustup-io-toasteo.git
 ```
 Start bootstrap script
 ```shell

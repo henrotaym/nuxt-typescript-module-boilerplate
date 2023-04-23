@@ -2,7 +2,7 @@
   "name": "{ORGANIZATION_NAME}/{MODULE_NAME}",
   "version": "0.0.1",
   "description": "{MODULE_DESCRIPTION}",
-  "repository": "git@github.com:{ORGANIZATION_NAME}/{MODULE_NAME}.git",
+  "repository": "{REPOSITORY_URL}",
   "license": "MIT",
   "type": "module",
   "exports": {
