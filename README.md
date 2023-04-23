@@ -56,12 +56,12 @@ Find and replace all on all files (CMD+SHIFT+F):
   - {MODULE_CONFIG_KEY} // toasteo
   - {ORGANIZATION_NAME} // @deegital
 ```
-
 Start bootstrap script
 ```shell
 ./cli bootstrap
 ```
 
+### Available commands
 ```bash
 # Install dependencies
 ./cli yarn install
