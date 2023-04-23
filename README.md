@@ -53,7 +53,7 @@ Find and replace all on all files (CMD+SHIFT+F):
 ```shell
   - {MODULE_NAME} // nuxt-trustup-io-toasteo
   - {MODULE_DESCRIPTION} // Our notification package for nuxt.
-  - {MODULE_CONFIG_KEY} // toasteo
+  - {MODULE_CONFIG_KEY} // trustupIoToasteo
   - {ORGANIZATION_NAME} // @deegital
 ```
 Start bootstrap script
