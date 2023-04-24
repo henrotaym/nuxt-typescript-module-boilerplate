@@ -74,7 +74,10 @@ Start bootstrap script
 ./cli start
 
 # Stop project
-./cli start
+./cli stop
+
+# Restart project
+./cli restart
 
 # Build the playground for production
 ./cli yarn dev:build
