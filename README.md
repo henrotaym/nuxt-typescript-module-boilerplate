@@ -87,7 +87,7 @@ Start bootstrap script
 ./cli yarn test:watch
 
 # Validate your package (running linter & typecript validation)
-./cli yarn check
+./cli yarn validate
 
 # Build the package for publication
 ./cli yarn build
@@ -95,6 +95,9 @@ Start bootstrap script
 # Release new version
 npm version patch
 ```
+
+### References
+Nuxt module development [reference](https://nuxt.com/docs/guide/going-further/modules)
 
 <!-- Badges -->
 [npm-version-src]: https://img.shields.io/npm/v/{ORGANIZATION_NAME}/{MODULE_NAME}/latest.svg?style=flat&colorA=18181B&colorB=28CF8D
