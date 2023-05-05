@@ -31,7 +31,7 @@
     "dev:prepare": "nuxt-module-build --stub && yarn generate",
     "version": "yarn format && git add -A src",
     "postversion": "npm publish",
-    "postpublish": "git push && git push --tags",
+    "postpublish": "git push && git push --tags"
   },
   "dependencies": {
     "@nuxt/kit": "^3.4.2"
