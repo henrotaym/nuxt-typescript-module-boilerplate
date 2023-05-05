@@ -3,37 +3,37 @@ cd ./scripts
 
 if [ "$1" == "bootstrap" ]
     then 
-        ./bootstrap.sh
+        ./bootstrap
 fi
 
 if [ "$1" == "start" ]
     then
-        ./start.sh
+        ./start
 fi
 
 if [ "$1" == "restart" ]
     then
-        ./restart.sh
+        ./restart
 fi
 
 if [ "$1" == "stop" ]
     then 
-        ./stop.sh
+        ./stop
 fi
 
 if [ "$1" == "version" ]
     then 
-        ./version.sh $*
+        ./version $*
 fi
 
 if [ "$1" == "publish" ]
     then 
-        ./publish.sh $*
+        ./publish $*
 fi
 
 if [ "$1" == "yarn" ]
     then 
-        ./app.sh $*
+        ./app $*
 fi
 
 cd ../
